@@ -1,0 +1,76 @@
+/* Estilo general para el cuerpo */
+body {
+    background-color: #C6E7FF;
+    font-family: fantasy, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor de inicio de sesión */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #FBFBFB;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(138, 218, 165, 0.1);
+}
+
+/* Contenedor de bienvenida */
+.welcome-container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    background-color: #FFEAC5;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif; /* Estilo de letra para los títulos */
+    color: #000000; 
+}
+
+/* Estilo para los títulos de formularios */
+.form-title {
+    font-family: 'Georgia', serif; /* Estilo de letra para los títulos de formularios */
+    color: #000000; /* Color azul */
+    text-align: center; /* Centrar texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para las etiquetas de los campos */
+.form-label {
+    font-family: 'Arial', sans-serif; /* Estilo de letra para etiquetas */
+    color: #333; /* Color gris oscuro */
+    font-weight: bold; /* Negrita */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el texto general */
+p, span, div {
+    font-family: 'Arial', sans-serif; /* Estilo de letra para el texto general */
+    color: #333;
+}
