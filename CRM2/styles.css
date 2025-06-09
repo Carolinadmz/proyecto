@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --purple-50: #faf5ff;
+  --purple-100: #f3e8ff;
+  --purple-200: #e9d5ff;
+  --purple-300: #d8b4fe;
+  --purple-400: #c084fc;
+  --purple-500: #a855f7;
+  --purple-600: #9333ea;
+  --purple-700: #7c3aed;
+  --purple-800: #6b21a8;
+  --purple-900: #581c87;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--purple-50) 0%, var(--purple-100) 100%);
+  min-height: 100vh;
+}
+
+.login-container {
+  background: linear-gradient(135deg, var(--purple-600) 0%, var(--purple-800) 100%);
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, var(--purple-700) 0%, var(--purple-900) 100%);
+  min-height: 100vh;
+  box-shadow: 2px 0 10px rgba(139, 69, 199, 0.3);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.table-purple {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(139, 69, 199, 0.1);
+}
+
+.btn-purple {
+  background: linear-gradient(135deg, var(--purple-500) 0%, var(--purple-700) 100%);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139, 69, 199, 0.3);
+}
+
+.search-dropdown {
+  background: white;
+  border: 2px solid var(--purple-200);
+  border-radius: 8px;
+}
+
+.card-purple {
+  background: white;
+  border: 1px solid var(--purple-200);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(139, 69, 199, 0.1);
+}
