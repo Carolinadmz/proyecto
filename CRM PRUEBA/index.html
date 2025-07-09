@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRM System - Gestión Empresarial</title>
+    <meta name="description" content="Sistema CRM para gestión de ventas, contactos y negocios">
+    <meta name="keywords" content="CRM, ventas, contactos, negocios, tickets">
+    <meta property="og:title" content="CRM System - Gestión Empresarial">
+    <meta property="og:description" content="Sistema CRM para gestión de ventas, contactos y negocios">
+    <meta name="twitter:title" content="CRM System - Gestión Empresarial">
+    <meta name="twitter:description" content="Sistema CRM para gestión de ventas, contactos y negocios">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-blue: #3B82F6;
+            --light-blue: #EFF6FF;
+            --glass-bg: rgba(255, 255, 255, 0.25);
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+
+    @layer components {
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-primary {
+            @apply bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors;
+        }
+        
+        .btn-secondary {
+            @apply bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-lg transition-colors;
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Login.js"></script>
+    <script type="text/babel" src="components/Dashboard.js"></script>
+    <script type="text/babel" src="components/Sidebar.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/modules/Compras.js"></script>
+    <script type="text/babel" src="components/modules/Contactos.js"></script>
+    <script type="text/babel" src="components/modules/Negocios.js"></script>
+    <script type="text/babel" src="components/modules/Tickets.js"></script>
+    <script type="text/babel" src="components/modals/AddModal.js"></script>
+    <script type="text/babel" src="components/modals/EditModal.js"></script>
+    <script type="text/babel" src="utils/router.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
